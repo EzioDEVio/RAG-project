@@ -48,7 +48,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wget
-          wget -qO- https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo bash
+          go install github.com/aquasecurity/trivy/cmd/trivy@latest
+          export PATH=$PATH:$(go env GOPATH)/bin
 
       - name: Run Trivy scan on Docker image
         run: |
