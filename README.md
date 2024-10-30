@@ -1,8 +1,7 @@
 [![CI Pipeline](https://github.com/EzioDEVio/RAG-project/actions/workflows/main.yaml/badge.svg)](https://github.com/EzioDEVio/RAG-project/actions/workflows/main.yaml)
 
-## The README file provides an overview, setup instructions, and images for obtaining the OpenAI API key.
 
-# EzioDevIo RAG Project
+# EzioDevio RAG Project
 
 This project is a Retrieval-Augmented Generation (RAG) system that allows users to upload PDF documents and ask questions about the content, with responses generated using OpenAI's GPT model.
 
