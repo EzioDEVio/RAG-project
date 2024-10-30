@@ -45,7 +45,7 @@ jobs:
 
       # Step 7: Scan Docker image with Trivy
       - name: Run Trivy scan
-        uses: aquasecurity/trivy-action@v0.11.0  # Use the latest Trivy version
+        uses: aquasecurity/trivy-action@v0  # Use latest stable Trivy version
         with:
           image-ref: ezio_rag_app
           format: table
