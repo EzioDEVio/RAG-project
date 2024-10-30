@@ -33,6 +33,7 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 ## File Structure
 
+
 RAG-project/
 ├── .env                   # Environment variables (API key)
 ├── app.py                 # Streamlit app for the RAG system
@@ -48,8 +49,7 @@ RAG-project/
 └── images/                # Folder with images for API key steps
 
 
-
-3. **Install required packages**:
+1. **Install required packages**:
 
 pip install -r requirements.txt
 
