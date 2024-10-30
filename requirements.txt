@@ -7,4 +7,5 @@ pandas
 streamlit
 watchdog
 python-dotenv
+pytest
 
