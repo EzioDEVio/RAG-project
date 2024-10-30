@@ -1,7 +1,7 @@
 [![CI Pipeline](https://github.com/EzioDEVio/RAG-project/actions/workflows/main.yaml/badge.svg)](https://github.com/EzioDEVio/RAG-project/actions/workflows/main.yaml)
 
 
-# EzioDevIo RAG Project
+# EzioDevio RAG Project
 
 This project is a Retrieval-Augmented Generation (RAG) system that allows users to upload PDF documents and ask questions about the content, with responses generated using OpenAI's GPT model.
 
