@@ -58,8 +58,15 @@ jobs:
         run: trivy --version
 
       # Step 9: Run Trivy scan on Docker image
+      - name: Initialize Trivy DB
+        env:
+          TRIVY_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          trivy --download-db-only
+    
       - name: Run Trivy scan on Docker image
         env:
           TRIVY_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           trivy image --severity HIGH,CRITICAL --format table ezio_rag_app
+    
