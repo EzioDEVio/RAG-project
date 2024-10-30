@@ -31,10 +31,17 @@ This project is a Retrieval-Augmented Generation (RAG) system that allows users 
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
+<<<<<<< HEAD
 
 ## Project Directory
 
 ![Project Directory Structure](directory_structure.png)
+=======
+## Project Directory Structure
+
+![Project Directory Structure](images/directory_structure.png)
+
+>>>>>>> fe0da40 (Save local changes before rebase)
 
 
 1. **Install required packages**:
