@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the code..
+      # Step 1: Checkout the code
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -45,22 +45,8 @@ jobs:
 
       # Step 7: Scan Docker image with Trivy
       - name: Run Trivy scan
-        uses: aquasecurity/trivy-action@v0  # Use latest stable Trivy version
+        uses: aquasecurity/trivy-action@v0.10.0  # Use stable Trivy version
         with:
           image-ref: ezio_rag_app
           format: table
           severity: HIGH,CRITICAL
-
-
-      # Step 8: Push to Docker Hub (optional)
-      # Uncomment the following section if you want to push to Docker Hub
-      # - name: Log in to Docker Hub
-      #   uses: docker/login-action@v2
-      #   with:
-      #     username: ${{ secrets.DOCKER_USERNAME }}
-      #     password: ${{ secrets.DOCKER_PASSWORD }}
-
-      # - name: Push Docker image to Docker Hub
-      #   run: |
-      #     docker tag ezio_rag_app yourdockerhubusername/ezio_rag_app:latest
-      #     docker push yourdockerhubusername/ezio_rag_app:latest
