@@ -43,14 +43,21 @@ jobs:
         run: |
           docker build -t ezio_rag_app .
 
-      # Step 7: Install Trivy and Scan Docker image
+      # Step 7: Install Trivy
       - name: Install Trivy
+        env:
+          GOPATH: ${{ runner.temp }}/go  # Use a temporary Go path
         run: |
           sudo apt-get update
           sudo apt-get install -y wget
           go install github.com/aquasecurity/trivy/cmd/trivy@latest
-          export PATH=$PATH:$(go env GOPATH)/bin
+          echo "PATH=$PATH:${GOPATH}/bin" >> $GITHUB_ENV  # Persist PATH update
 
+      # Step 8: Verify Trivy Installation
+      - name: Verify Trivy Installation
+        run: trivy --version
+
+      # Step 9: Run Trivy scan on Docker image
       - name: Run Trivy scan on Docker image
         run: |
           trivy image --severity HIGH,CRITICAL --format table ezio_rag_app
