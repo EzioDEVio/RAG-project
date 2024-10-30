@@ -1,0 +1,10 @@
+openai
+langchain
+PyMuPDF
+faiss-cpu
+numpy
+pandas
+streamlit
+watchdog
+python-dotenv
+
