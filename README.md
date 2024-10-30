@@ -31,10 +31,7 @@ This project is a Retrieval-Augmented Generation (RAG) system that allows users 
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
-## File Structure
-
-
-RAG-project/ ├── .env # Environment variables (API key) ├── app.py # Streamlit app for the RAG system ├── document_loader.py # Code for loading and processing PDF documents ├── retriever.py # Code for indexing and retrieving documents ├── main.py # Main script for RAG pipeline ├── requirements.txt # List of required libraries ├── README.md # Project README ├── Dockerfile # Dockerfile for containerizing the app ├── .gitignore # Ignore sensitive and unnecessary files ├── data/ │ └── uploaded_pdfs/ # Folder to store uploaded PDFs └── images/ # Folder with images for API key steps
+![Project Directory Structure](images/directory_structure.png)
 
 
 1. **Install required packages**:
