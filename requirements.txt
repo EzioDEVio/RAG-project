@@ -4,7 +4,7 @@ PyMuPDF==1.21.1               # Compatible with PDF handling
 faiss-cpu==1.7.2              # Version compatible with CPU-based FAISS
 numpy==1.23.5                 # Commonly stable version for ML projects
 pandas==1.5.2                 # Use a stable version
-streamlit==1.30.0             # Latest stable version as of writing
+streamlit==1.37.0             # Latest stable version as of writing
 watchdog==2.1.9               # Compatibility for file watching
 python-dotenv==0.21.0         # For environment variable handling
 pytest==7.1.2                 # Testing framework
