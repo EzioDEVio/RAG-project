@@ -1,5 +1,5 @@
 openai==0.27.0                # Use an older version if needed for compatibility
-langchain==0.0.85             # Specify a compatible version for your setup
+langchain==0.3.0             # Specify a compatible version for your setup
 PyMuPDF==1.21.1               # Compatible with PDF handling
 faiss-cpu==1.7.2              # Version compatible with CPU-based FAISS
 numpy==1.23.5                 # Commonly stable version for ML projects
