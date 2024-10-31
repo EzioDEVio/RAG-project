@@ -1,4 +1,4 @@
-import openai 
+import openai
 import os
 from dotenv import load_dotenv
 from document_loader import load_documents_from_folder
@@ -18,13 +18,10 @@ def generate_response(query, retrieved_docs):
         {"role": "system", "content": "You are a helpful assistant for answering questions based on provided documents."},
         {"role": "user", "content": f"Context: {context}\n\nQuestion: {query}"}
     ]
-    try:
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # Updated model
-            messages=messages,
-            max_tokens=150,
-            temperature=0.3,
-        )
-        return response.choices[0].message['content'].strip()
-    except openai.error.OpenAIError as e:
-        return f"An error occurred: {e}"
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=messages,
+        max_tokens=150,
+        temperature=0.3,
+    )
+    return response.choices[0].message['content'].strip()

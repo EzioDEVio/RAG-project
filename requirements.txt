@@ -1,11 +1,12 @@
-openai
-langchain
-PyMuPDF
-faiss-cpu
-numpy
-pandas
-streamlit
-watchdog
-python-dotenv
-pytest
-
+openai==0.27.0                # Use an older version if needed for compatibility
+langchain==0.0.85             # Specify a compatible version for your setup
+PyMuPDF==1.21.1               # Compatible with PDF handling
+faiss-cpu==1.7.2              # Version compatible with CPU-based FAISS
+numpy==1.23.5                 # Commonly stable version for ML projects
+pandas==1.5.2                 # Use a stable version
+streamlit==1.30.0             # Latest stable version as of writing
+watchdog==2.1.9               # Compatibility for file watching
+python-dotenv==0.21.0         # For environment variable handling
+pytest==7.1.2                 # Testing framework
+langchain_community           # Ensure it’s compatible with your version of langchain
+tiktoken==0.3.0               # Latest compatible version for OpenAI embeddings
