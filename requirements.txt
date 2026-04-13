@@ -7,6 +7,6 @@ pandas==1.5.2                 # Use a stable version
 streamlit==1.37.0           # Latest stable version as of writing
 watchdog==2.1.9               # Compatibility for file watching
 python-dotenv==0.21.0         # For environment variable handling
-pytest==7.1.2                 # Testing framework
+pytest==9.0.3                 # Testing framework
 langchain_community           # Ensure it’s compatible with your version of langchain
 tiktoken==0.3.0               # Latest compatible version for OpenAI embeddings
